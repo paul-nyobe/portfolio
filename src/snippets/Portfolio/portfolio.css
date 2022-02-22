@@ -1,0 +1,91 @@
+.portfolioCard {
+    text-align: left;
+    padding: 30px;
+    border-radius: 20px;
+    background: var(--gradient-box-w);
+    box-shadow: var(--shadow-white-3);
+    position: relative;
+    z-index: 1;
+    transition: 0.5s all ease-in-out;
+    margin: 10px;
+    min-width: 400px;
+    max-width: 400px;
+}
+.portfolioCard .inner a:hover{
+    color: var(--color-primary);
+}
+.portfolioCard .inner .thumbnail a{
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.portfolioCard .inner .thumbnail a img{
+    width: 100%;
+    min-height: 250px;
+    transition: var(--transition);
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+.portfolioCard:hover .inner .thumbnail a img{
+    transform: scale(1.1);
+}
+.portfolioCard .inner .content{
+    padding-top: 18px;
+}
+.portfolioCard .inner .content .category-list{
+    color: var(--color-primary);
+    font-weight: 600;
+    font-family: var(--font-primary);
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+}
+.portfolioCard .inner .content .title a{
+    transition: var(--transition);
+    color: var(--color-heading-wv);
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 34px;
+    width: 100%;
+    display: inline-block;
+}
+.portfolioCard .inner .content .title svg{
+    font-size: 0;
+    position: relative;
+    top: 10px;
+    transition: var(--transition);
+    opacity: 0;
+}
+.portfolioCard .inner .content .title:hover a svg {
+    color: var(--color-primary);
+    top: 5px;
+    opacity: 1;
+    font-size: 23px;
+}
+.portfolioCard .inner .content .title a:hover{
+    color: var(--color-primary);
+}
+.portfolioCard .inner .content .tasks{
+    margin-top: 10px;
+}
+.portfolioCard .inner .content .tasks .check{
+    display: flex;
+    align-items: center;
+}
+.portfolioCard .inner .content .tasks .check p{
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--font-secondary);
+}
+.portfolioCard .inner .content .tasks .check svg{
+    color: var(--color-primary);
+}
+
+@media screen and (max-width:420px) {
+    .portfolioCard{
+        min-width: 300px;
+    }
+}

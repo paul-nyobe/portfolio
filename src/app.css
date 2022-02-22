@@ -1,0 +1,17 @@
+.app{
+    height: 100vh;
+}
+.app .containers{
+    width: 100%;
+    /* height: calc(100vh - 70px); */
+    position: relative;
+    top: 70px;
+    scrollbar-width: none;
+}
+.app .containers::-webkit-scrollbar{
+    display: none;
+}
+.app .containers > *{
+    width: 100%;
+    min-height: 100vh;
+}

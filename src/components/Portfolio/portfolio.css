@@ -1,0 +1,12 @@
+.portfolio-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:992px) {
+    .portfolio-wrapper{
+        justify-content: center;
+    }
+}
