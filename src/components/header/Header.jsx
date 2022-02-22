@@ -2,7 +2,7 @@ import './header.css';
 import { useRef, useEffect } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import { MdPerson, MdEmail  } from 'react-icons/md';
-import { general } from '../../data'
+import { general } from '../../data';
 
 import { useGlobalContext } from '../../context'
 
